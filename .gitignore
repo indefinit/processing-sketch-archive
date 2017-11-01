@@ -1,3 +1,8 @@
+*.png
+*.jpg
+*.mov
+*.mp4
+
 # Compiled class file
 *.class
 
