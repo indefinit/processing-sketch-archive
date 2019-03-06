@@ -1,0 +1,139 @@
+@indefinit
+indefinit/processing-sketch-archive – hair.pde
+Showing the top seven matches
+Last indexed on Jul 11, 2018
+Processing
+        float cosang =cos (abs(acos (fj) - acos (-fi )));
+        float spec = max( pow6 (cosang),0.);
+        vals[i*numVals + j] = spec;
+  Ci.mult(v*ambShade);
+   
+  PVector Cd = new PVector();
+  Cd.set(diffuse);
+  Cd.mult(Cdiff);
+  Ci.add( Cd);
+@indefinit
+indefinit/processing-sketch-archive – hair.pde
+Showing the top seven matches
+Last indexed on Jul 11, 2018
+Processing
+        float cosang =cos (abs(acos (fj) - acos (-fi )));
+        float spec = max( pow6 (cosang),0.);
+        vals[i*numVals + j] = spec;
+  Ci.mult(v*ambShade);
+   
+  PVector Cd = new PVector();
+  Cd.set(diffuse);
+  Cd.mult(Cdiff);
+  Ci.add( Cd);
+@ZMQers
+ZMQers/zmosq – README.md
+Showing the top three matches
+Last indexed on Jul 6, 2018
+Markdown
+[![Build Status](https://travis-ci.org/ZMQers/zmosq.png?branch=master)](https://travis-ci.org/ZMQers/zmosq)
+The zmosq proxy is [actor](http://czmq.zeromq.org/manual:zactor) maintaining MQTT client connection in a background. It allows users to connect to MQTT broker, subscribe to one or more topics and publish them as [ZMTP](https://rfc.zeromq.org/spec:23/ZMTP/) messages.
+
+Those messages have two frames [MQTT topic|MQTT payload]. Those are sent to zmosq pipe, so can be read from actor itself.
+@RobertNorthard
+RobertNorthard/robertnorthard.github.io – 2019-02-07-terraform-inspec-iaac-testing.markdown
+Showing the top six matches
+Last indexed 26 days ago
+Markdown
+date: 2019-02-07 18:00
+headerImage: false
+tag:
+- Terraform
+- InSpec
+- CI / CD
+star: false
+category: blog
+author: robertnorthard
+description: Testing IaaC with InSpec
+---
+
+
+Our Infra structure CI / CD pipeline is a key enabler for us failing fast, controlling releases to environments, delivering with agility, ensuring parity between environments. The typical steps include: linting, Terraform validate, plan and apply.
+@metacoglab
+metacoglab/FlemingVdPuttenDaw – Figure4.m
+Showing the top three matches
+Last indexed on Jul 9, 2018
+MATLAB
+    % second part of vector
+    cd(dir_stats)
+    betaFile = ['regression_conf_split_' rois{r} '.csv'];
+    betas = csvread(betaFile,1,1);
+    bar(1, segmented_ffx(1), 'FaceColor', [0.6 0.6 1])
+    hold on
+    bar(2, segmented_ffx(2), 'FaceColor', [0.8 0.8 0.8])
+@leocov-dev
+leocov-dev/maya-realtime-shaders – lcHairShader_2.0.cgfx
+Showing the top eight matches
+Last indexed on Jul 13, 2018
+  // Diffuse and Specular
+  float3 Ci = 0;
+  float3 Cd = 0;
+
+  float Fr = fresnel(N,V,specFresnelExp)*specFresnelScale;
+  Ci += rimLight(N,
+                 V);
+  Ci += rimLightSec (Cd,  //use Cd instead of Ci to mask the rim light by only the diffuse light intensity
+@johncchen
+johncchen/jenkins-config – config.xml
+Showing the top three matches
+Last indexed on Jan 2
+XML
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>ssh://jk@192.168.1.29:29418/Algorithms/FaceRecognition2.git</url>
+./gradlew clean assembleRelease
+
+cd /var/jenkins/workspace/Algorithms-FaceRecognition2-release/signed
+java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/app-danny_cn-release.apk	 ../app/build/outputs/apk/app-danny_cn-release-signed.apk
+@johncchen
+johncchen/jenkins-config – config.xml
+Showing the top three matches
+Last indexed on Sep 12, 2018
+XML
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>ssh://jk@192.168.1.29:29418/RobotApps/FaceHome2.git</url>
+./gradlew assembleRelease
+cd /var/jenkins/workspace/RobotApps-FaceHome2-abby/signed/
+java -jar signapk.jar platform.x509.pem platform.pk8 ../app/build/outputs/apk/release/app-release.apk ../app/build/outputs/apk/release/app-release-signed.apk
+@johncchen
+johncchen/jenkins-config – config.xml
+Showing the top three matches
+Last indexed on Jun 27, 2018
+XML
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>ssh://jk@192.168.1.29:29418/Lib/FaceDetectLib.git</url>
+            <org.sonatype.nexus.ci.nxrm.MavenAsset>
+              <filePath>/var/jenkins/workspace/FaceDetectLib-debug/app/build/outputs/apk/debug/app-debug.apk</filePath>
+@leocov-dev
+leocov-dev/maya-realtime-shaders – lcUberShader_3.1.cgfx
+Showing the top five matches
+Last indexed on Jul 13, 2018
+  float3 N = normalsTangent(Nt, Nw, Bw, Tw, V);
+
+  // Light Loop
+  // Diffuse and Specular
+  float3 Ci = 0;  //Incident Color
+  float3 Cd = 0;  //Diffuse of lights only, no textures
+    Specular *= Lc* FrSpec * specularColor;
+
+    Ci += (Diffuse+Specular);
+  }
+
+  // Rim Light Component
+  Ci += rimLightDual (Cd,  //use Cd instead of Ci to mask the rim light by only the diffuse light intensity
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
